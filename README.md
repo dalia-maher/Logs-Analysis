@@ -2,7 +2,7 @@
 
 This project aims to build an internal reporting tool that will use information from the database to discover what kind of articles the site's readers like. It will run from the command line (it won't take any input from the user. Instead, it will connect to that database, use SQL queries to analyze the log data, and print out the answers to some questions. This project was done as a part of the Full Stack Web Developer Nanodegree on [Udacity](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 
-### The analysis will answer these three questions:
+### The report analysis should answer these three questions:
 1. What are the most popular three articles of all time?
 2. Who are the most popular article authors of all time?
 3. On which days did more than 1% of requests lead to errors?
@@ -42,6 +42,7 @@ git clone https://github.com/dalia-maher/Logs-Analysis
   * The authors table includes information about the authors of articles.
   * The articles table includes the articles themselves.
   * The log table includes one entry for each time a user has accessed the site.
+  You can explore the tables using the `\dt` (to display the tables) and `\d table` (to show the database schema for a particular table) commands and select statements.
 6. Use `psql -d news` to connect to database.
 7. Create the views in the database which are:
 
@@ -83,7 +84,7 @@ GROUP BY date
 ORDER BY date;
 ```
 8. Once views are successfully created, press CTRL + D to exit.
-9. run the python module in the terminal
+9. Run the python module in the terminal
   ```
     python news_logs.py
   ```
