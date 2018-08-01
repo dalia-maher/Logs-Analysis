@@ -2,6 +2,11 @@
 
 This project aims to build an internal reporting tool that will use information from the database to discover what kind of articles the site's readers like. It will run from the command line (it won't take any input from the user. Instead, it will connect to that database, use SQL queries to analyze the log data, and print out the answers to some questions. This project was done as a part of the Full Stack Web Developer Nanodegree on [Udacity](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 
+### The analysis will answer these three questions:
+1. What are the most popular three articles of all time?
+2. Who are the most popular article authors of all time?
+3. On which days did more than 1% of requests lead to errors?
+
 ## Project Setup
 
 To set up the environment for the project:
@@ -20,11 +25,11 @@ git clone https://github.com/dalia-maher/Logs-Analysis
 ## To run this project
 
 1. Open the unzipped / cloned directory of the repo in your local machine
-2. Launch the Vagrant VM inside Vagrant sub-directory in the downloaded fullstack-nanodegree-vm repository using command: 
+2. Launch the Vagrant VM inside Vagrant sub-directory in the repository using command: 
   ```
     $ vagrant up
   ```
-3. Then Log in using this command:
+3. Then log in using this command:
   ```
     $ vagrant ssh
   ```
@@ -77,10 +82,9 @@ FROM log where status != '200 OK'
 GROUP BY date
 ORDER BY date;
 ```
-
 8. Once views are successfully created, press CTRL + D to exit.
 9. Change directory to the project.
-10. run the python module
+10. run the python module in the terminal
   ```
     python news_logs.py
   ```
