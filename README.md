@@ -10,10 +10,10 @@ This project aims to build an internal reporting tool that will use information 
 ## Project Setup
 
 To set up the environment for the project:
-1- You must download [Python](https://www.python.org/downloads). It's supported for Windows, Linux/UNIX, Mac OS X, and other operating systems.
-2- Download and install [Vagrant](https://www.vagrantup.com/).
-3- Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-4- Download the newsdata.sql file.
+1. You must download [Python](https://www.python.org/downloads). It's supported for Windows, Linux/UNIX, Mac OS X, and other operating systems.
+2. Download and install [Vagrant](https://www.vagrantup.com/).
+3. Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+4. Download the newsdata.sql file.
 
 Once your environment is ready, you can download the project ZIP file or clone it to your local machine by clicking on the green "Clone or download" button on the upper right side of the page
 `or`
@@ -83,8 +83,7 @@ GROUP BY date
 ORDER BY date;
 ```
 8. Once views are successfully created, press CTRL + D to exit.
-9. Change directory to the project.
-10. run the python module in the terminal
+9. run the python module in the terminal
   ```
     python news_logs.py
   ```
