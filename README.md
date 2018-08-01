@@ -42,6 +42,7 @@ git clone https://github.com/dalia-maher/Logs-Analysis
   * The authors table includes information about the authors of articles.
   * The articles table includes the articles themselves.
   * The log table includes one entry for each time a user has accessed the site.
+  
   You can explore the tables using the `\dt` (to display the tables) and `\d table` (to show the database schema for a particular table) commands and select statements.
 6. Use `psql -d news` to connect to database.
 7. Create the views in the database which are:
